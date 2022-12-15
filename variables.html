@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cm.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Variable Substitutions</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pages">
+            <div class="page home">
+                <div id="image">
+                    <img src="images/sunrise-gc1ed69cf1_640.jpg" width="100%">
+                    <br>
+                    <div id="imageCredit">
+                        Image by <a href="https://pixabay.com/users/brickbard-1115630/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6474187">Amberrose Nelson</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6474187">Pixabay</a>
+                    </div>
+                </div>
+                <div id="top">
+                    <h1 class="wrap">Practical Math Tips For Developers</h1>
+                    <br class="onlyNarrow"><br class="onlyNarrow">
+                </div>
+                <div id="menubar">
+                    <ul id="menulist">
+                        <li class="menuitem" onclick="javascript:void(0)">Algebra</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Geometry</li>
+                        <li class="menuitem" id="leave3" onclick="slide('leave')">Variables</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Matrices</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Binary Numbers</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Feedback</li>
+                        <li class="menuitem" onclick="location.href='https://sites.google.com/view/btchan';">About Me</li>
+                    </ul>
+                </div>
+                <div class="showIfFourthWidest">
+                    <br><br><br><br><br><br><br><br>
+                    <br><br><br><br>
+                </div>
+                <main loading="lazy">
+                    <p class="intro" loading="lazy">
+
+                        This site is intended to provide practical tips for people who need help with math at various levels (ranging from high school to university level). It is also intended for those who prefer an alternative to reading a textbook or attending a lecture. The content is geared towards developers as concepts and examples are illustrated using JS code snippets. Feedback is welcome (see the feedback page which includes my feedback email).
+
+                    </p>
+
+                    <p class="intro" loading="lazy">
+
+                        <strong>Current Content:</strong> <br> Order of operations and related notions (Algebra). How are vectors different from points (Geometry). Compute distances (Geometry). Variable substitutions for formulas and equations (Variables). How to add and multiply matrices (Matrices). Visual explanation of how binary numbers work (Binary Numbers).  
+    
+                    </p>
+                </main>
+            </div>
+            <div class="page variables">
+                <div class="buttonlikeContainer">
+                    <div class="buttonlike" onclick="slide('home')">Home</div>
+                </div>
+                <div id="image">
+                    <img class="slightlyTranslucent" src="images/calculator-g3a8c583c2_640.png" width="70%" loading="lazy">
+                    <br>
+                    <div id="imageCredit">
+                        Image by <a href="https://pixabay.com/users/digitalmst-9775514/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3738745">Do Kim</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3738745">Pixabay</a>
+                    </div>
+                </div>
+
+                <div id="heading">
+                    <h1 class="wrap">Variable Substitutions</h1>
+                </div>
+
+                <main>
+                    <p>Often there are questions such as the following.</p>
+                    <div class="boxed">
+                    Given
+                    <div>
+                        \[ y = x^2 + 4x + 7 \;\;\;\;\;\;\;\;\;\;\; (1) \]
+                    </div>
+                    and 
+                    <div>
+                        \[ x = \frac{1}{5u - 4} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; (2) \]
+                    </div>
+                    Substitute the right side of Equation (2) for the variable \(x\) in Equation (1).
+                    </div>
+
+                    <p>
+                        We can define two functions, one representing Equation (1) and one representing Equation (2).
+                    </p>
+                    <code>
+                        var y = x => <div class="showIfNarrow"><br></div> x ** 2 + 4 * x + 7; <br>
+                        <div class="showIfNarrow"><br></div>
+                        var x = u => <div class="showIfNarrow"><br></div>3 / (5 * u - 4); 
+                    </code>
+                    <p>Now define</p>
+                    <code>
+                            var f = u => y(x(u));
+                    </code>
+
+                    <p>
+                        The reason we want to, in the above equation, substitute the right side of the formula in Equation (2) for the variable \(x\) in Equation (1) is because we want to determine <code class="inlineCode">f</code> with an equation.
+                    </p>
+
+                    <div id="flipL1">how to determine <code class="inlineCode">f</code> with an equation</div>
+                    <div id="panelL1">
+                        <p>
+                            If, in the above equation, we sustituted the right side of the formula in Equation (2), we obtain the following equation.
+                        </p>
+                        <div id="variablesEq3"></div>
+                        <p>Using algebra, we can calculate the following.</p>
+
+                        <div id="variablesEqa"></div>
+                        <br>
+                        <div id="variablesEqb"></div>
+
+                        <p>So Equation (3) can be simplified to this equation.</p>
+                        <div id="variablesEq4"></div>
+                        <p>
+                            Equation (4) is the solution. To see that Equation (4) determines <code class="inlineCode">f</code>, write
+                        </p> 
+                        <code>
+                        var g = u => <div class="showIfNarrow"><br></div> 9 / (5 * u - 4) ** 2 <div class="showIfNarrow"><br></div><div class="showIfFourthWidest"><br></div> + 12 / (5 * u - 4) + 7;
+                        </code>
+                        <p> One can check that <code class="inlineCode">g</code> outputs the same values as <code class="inlineCode">f</code>. For instance, both of the following evaluate to true.</p>
+                        <code>
+                            f(0.53) === 3.049382716049383; <br>
+                            g(0.53) === 3.049382716049383;
+                        </code>
+                    </div>
+                    <br><br>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script defer type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script defer src="scripts/equations.js"></script>
+    <script defer>
+        setTimeout(() => document.getElementById('leave3').click(), 100);
+    </script>
+</body>
+</html>

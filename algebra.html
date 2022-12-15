@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cm.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Algebra</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pages">
+            <div class="page home">
+                <div id="image">
+                    <img src="images/sunrise-gc1ed69cf1_640.jpg" width="100%">
+                    <br>
+                    <div id="imageCredit">
+                        Image by <a href="https://pixabay.com/users/brickbard-1115630/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6474187">Amberrose Nelson</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6474187">Pixabay</a>
+                    </div>
+                </div>
+                <div id="top">
+                    <h1 class="wrap">Practical Math Tips For Developers</h1>
+                    <br class="onlyNarrow"><br class="onlyNarrow">
+                </div>
+                <div id="menubar">
+                    <ul id="menulist">
+                        <li class="menuitem" id="leave1" onclick="slide('leave');">Algebra</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Geometry</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Variables</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Matrices</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Binary Numbers</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Feedback</li>
+                        <li class="menuitem" onclick="location.href='https://sites.google.com/view/btchan';">About Me</li>
+                    </ul>
+                </div>
+                <div class="showIfFourthWidest">
+                    <br><br><br><br><br><br><br><br>
+                    <br><br><br><br>
+                </div>
+                <main loading="lazy">
+                    <p class="intro" loading="lazy">
+
+                        This site is intended to provide practical tips for people who need help with math at various levels (ranging from high school to university level). It is also intended for those who prefer an alternative to reading a textbook or attending a lecture. The content is geared towards developers as concepts and examples are illustrated using JS code snippets. Feedback is welcome (see the feedback page which includes my feedback email).
+
+                    </p>
+
+                    <p class="intro" loading="lazy">
+
+                        <strong>Current Content:</strong> <br> Order of operations and related notions (Algebra). How are vectors different from points (Geometry). Compute distances (Geometry). Variable substitutions for formulas and equations (Variables). How to add and multiply matrices (Matrices). Visual explanation of how binary numbers work (Binary Numbers).  
+    
+                    </p>
+                </main>
+            </div>
+            <div class="page algebra">
+                <div class="buttonlikeContainer">
+                    <div class="buttonlike" onclick="slide('home')">Home</div>
+                    <div class="showIfNarrow"><br></div>
+                </div>
+                <div class="showIfWide">
+                    <div id="image">
+                        <img src="images/paper-g3e65b57f0_640.png" width="70%">
+                        <div id="imageCredit">
+                            Image by <a href="https://pixabay.com/users/josemairing-2310708/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1358079">Michael</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1358079">Pixabay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="showIfSecondWidest showIfThirdWidest">
+                    <div id="image">
+                        <img src="images/paper-g3e65b57f0_640.png" width="70%">
+                        <div id="imageCredit">
+                            Image by <a href="https://pixabay.com/users/josemairing-2310708/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1358079">Michael</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1358079">Pixabay</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="heading">
+                    <h1 class="noWrap">Algebra</h1>
+                    <div class="showIfFourthWidest showIfNarrow">
+                        <div id="image">
+                            <img src="images/paper-g3e65b57f0_640.png" width="70%">
+                            <div id="imageCredit">
+                                Image by <a href="https://pixabay.com/users/josemairing-2310708/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1358079">Michael</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1358079">Pixabay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <main>
+
+                    <h2>Writing formulas in code (Order of Operations).</h2>
+                    <p> Make sure that the brackets are in the right positions. When there are no brackets, perform multiplication and division first, then addition and subtraction. </p>
+
+                    <hr>
+                    <div id="flip1">Example 1</div>
+                    <div id="panel1">
+                        <p>Set</p>
+            
+                        <code>
+                        var funct1 = <div class="showIfNarrow"><br></div> (x, y, z) => x + y * z;<br>
+                        <div class="showIfNarrow"><br></div>
+                        var funct2 = <div class="showIfNarrow"><br></div> (x, y, z) => x + (y * z);<br>
+                        <div class="showIfNarrow"><br></div>
+                        var funct3 = <div class="showIfNarrow"><br></div> (x, y, z) => (x + y) * z;
+                        </code>
+                
+                        <p>Then <code class="inlineCode">funct1</code> outputs the same answers as <code class="inlineCode">funct2</code>, but <code class="inlineCode">funct3</code> outputs different answers than <code class="inlineCode">funct1</code> and <code class="inlineCode">funct2</code>. For instance, both of the following</p>
+                        <code>
+                            funct1(4, 1, 5) === <div class="showIfNarrow"><br></div> funct2(4, 1, 5);<br>
+                            <div class="showIfNarrow"><br></div>
+                            funct1(4, 1, 5) !== <div class="showIfNarrow"><br></div> funct3(4, 1, 5); 
+                        </code>
+                        <p>evaluate to true.</p>
+                    </div>
+                    <hr>
+                    <div id="flip2">Example 2</div>
+                    <div id="panel2">
+                        <p>Set</p>
+            
+                        <code>
+                        var funct4 = <div class="showIfNarrow"><br></div> (x, y, z) => x/y + z;<br>
+                        <div class="showIfNarrow"><br></div>
+                        var funct5 = <div class="showIfNarrow"><br></div> (x, y, z) => x/(y + z);<br>
+                        </code>
+                
+                        <p>Then <code class="inlineCode">funct4</code> outputs different answers than <code class="inlineCode">funct5</code>.</p> 
+                    </div>
+                    <hr>
+                    <div id="flip3">Example 3</div>
+                    <div id="panel3">
+                        <p>Set</p>
+            
+                        <code>
+                        var funct6 = (w, x, y, z) <div class="showIfNarrow"><br></div> => v - w * x / y + z;<br>
+                        <div class="showIfNarrow"><br></div>
+                        var funct7 = (w, x, y, z) <div class="showIfNarrow"><br></div> => v - (w * x / y) + z;
+                        </code>
+                        <p>Then <code class="inlineCode">funct6</code> outputs the same answers as <code class="inlineCode">funct7</code>.</p>
+                    </div>
+                    <hr>
+                    <div id="flip4">Example 4</div>
+                    <div id="panel4">
+                        <p>Set</p>
+                        <code>
+                        var funct8 = (v, w, x, y, z) <div class="showIfNarrow"><br></div> => v / z - w * z <div class="showIfNarrow"><br></div> + x / z - y / z;<br>
+                        <div class="showIfNarrow"><br></div>
+                        var funct9 = (w, x, y, z) <div class="showIfNarrow"><br></div> => (v / z) - (w * z) <div class="showIfNarrow"><br></div> + (x / z) - (y / z);
+                        </code>
+                        <p>Then <code class="inlineCode">funct8</code> outputs the same answers as <code class="inlineCode">funct9</code>.</p> 
+                    </div>
+                    <hr>
+                    <div id="flip5">Example 5</div>
+                    <div id="panel5">        
+                        <p>Set</p>
+                        <code>
+                        var funct4 = (w, x, y, z) <div class="showIfNarrow"><br></div> => w + x/(y + z);<br> <div class="showIfNarrow"><br></div>
+                        var funct5 = (w, x, y, z) <div class="showIfNarrow"><br></div> => (w + x)/(y + z);<br>
+                        </code>
+                        <p>Then <code class="inlineCode">funct4</code> and <code class="inlineCode">funct5</code> will output different answers.</p>
+                    </div>
+                    <br>
+            
+                    <p>Sometimes, brackets are not needed.</p>
+                    <hr>
+                    <div id="flip6">Example 6</div>
+                    <div id="panel6">
+                        <p>Set</p> 
+                        <code>
+                        var funct6 = (x, y, z) <div class="showIfNarrow"><br></div> => x * (y / z);<br> <div class="showIfNarrow"><br></div>
+                        var funct7 = (x, y, z) <div class="showIfNarrow"><br></div> => (x * y)/z;
+                        </code>
+                        <p>Then <code class="inlineCode">funct6</code> and <code class="inlineCode">funct7</code> will output the same answers.</p>
+                    </div>
+                    <hr>
+                    <div id="flip7">Example 7</div>
+                    <div id="panel7">
+                        <p>Set</p>
+                        <code>
+                        var funct8 = (x, y, z) <div class="showIfNarrow"><br></div> => x + (y - z);<br><div class="showIfNarrow"><br></div>
+                        var funct9 = (x, y, z) <div class="showIfNarrow"><br></div> => (x + y) - z;
+                        </code>
+                        <p>Then <code class="inlineCode">funct8</code> and <code class="inlineCode">funct9</code> will output the same answers.</p>
+                    </div>
+
+                    <br>
+                    
+                    <p> Sometimes, we have to be careful when using brackets with subtraction and division.</p> 
+            
+                    <hr>
+                    <div id="flip8">Example 8</div>
+                    <div id="panel8">
+                        <p>Set</p> 
+                        <code>
+                        var funct10 = (x, y, z) <div class="showIfNarrow"><br></div> => x - (y - z);<br><div class="showIfNarrow"><br></div>
+                        var funct11 = (x, y, z) <div class="showIfNarrow"><br></div> => x - y - z;<br><div class="showIfNarrow"><br></div>
+                        var funct12 = (x, y, z) <div class="showIfNarrow"><br></div> => x - y + z;
+                        </code>
+                        <p>Then <code class="inlineCode">funct10</code> and <code class="inlineCode">funct11</code> will output different answers, but <code class="inlineCode">funct10</code> and <code class="inlineCode">funct12</code> will output the same answers.</p>
+                    </div>
+                    <hr>
+                    <div id="flip9">Example 9</div>
+                    <div id="panel9">
+                        <p>Set</p>
+                        <code>
+                        var funct13 = (x, y) <div class="showIfNarrow"><br></div> => 1 / (x / y);<br><div class="showIfNarrow"><br></div>
+                        var funct14 = (x, y) <div class="showIfNarrow"><br></div> => (1 / x) / y;<br><div class="showIfNarrow"><br></div>
+                        var funct15 = (x, y) <div class="showIfNarrow"><br></div> => y / x; <br><div class="showIfNarrow"><br></div>
+                        var funct16 = (x, y) <div class="showIfNarrow"><br></div> => 1 / (x * y);
+                        </code>
+                        <p>Then <code class="inlineCode">funct13</code> and <code class="inlineCode">funct15</code> output the same answers, <code class="inlineCode">funct14</code> and <code class="inlineCode">funct16</code> output the same answers, and <code class="inlineCode">funct13</code> and <code class="inlineCode">funct14</code> output different answers.</p>
+                    </div>
+                    <br><br>
+
+                    <h2>The distributive law:</h2>
+                    <p>Multiplication and division spread into addition and subtraction.</p>
+                    <p>Set</p>
+
+                    <code>
+                    var functa = (x, y, z) <div class="showIfNarrow"><br></div> => x * (y + z);<br><div class="showIfNarrow"><br></div>
+                    var functb = (x, y, z) <div class="showIfNarrow"><br></div>=> (x * y) + (x * z);
+                    </code>
+
+                    <p>Then <code class="inlineCode">functa</code> outputs the same answers as <code class="inlineCode">functb</code>. This fact, that <code class="inlineCode">functa</code> and <code class="inlineCode">functb</code> give the same answers, is the distributive law. Reformulations of this law are also true.</p>
+                    <hr>
+                    <div id="flip10">Example 10</div>
+                    <div id="panel10">
+                        <p>Set</p>
+            
+                        <code>
+                        var functc = (x, y, z) <div class="showIfNarrow"><br></div> => (y - z) * x;<br><div class="showIfNarrow"><br></div>
+                        var functd = (x, y, z) <div class="showIfNarrow"><br></div> => (y * z) - (z * x);
+                        </code>
+                
+                        <p>Then <code class="inlineCode">functc</code> outputs the same answers as <code class="inlineCode">functd</code>.</p>
+                    </div>
+                    <hr>
+                    <div id="flip11">Example 11</div>
+                    <div id="panel11">
+                        <p>Set</p>
+            
+                        <code>
+                        var functe = (x, y, z) <div class="showIfNarrow"><br></div> => (y - z + w) / x;<br><div class="showIfNarrow"><br></div>
+                        var functf = (x, y, z) <div class="showIfNarrow"><br></div> => (y / x) - (z / x) + (w / x);
+                        </code>
+                
+                        <p>Then <code class="inlineCode">functe</code> outputs the same answers as <code class="inlineCode">functf</code>.</p>
+                    </div>
+                    <br><br>
+            
+                    <h2>Exponents</h2> 
+                    <p>Exponents spread into multiplication and division.</p>
+                        
+                    <hr>
+                    <div id="flip12">Example 12</div>
+                    <div id="panel12">
+                        <p>Set</p>
+                        <code>
+                            var functg = (x, y, z) <div class="showIfNarrow"><br></div> => (x / y) ** z; <br><div class="showIfNarrow"><br></div>
+                            var functh = (x, y, z) <div class="showIfNarrow"><br></div>=> (x ** z) / (y ** z); <br><div class="showIfNarrow"><br></div>
+                            var functi = (x, y, z) <div class="showIfNarrow"><br></div> => x ** z / y ** z;
+                        </code>
+                        <p>Then <code class="inlineCode">functg</code>, <code class="inlineCode">functh</code>, and <code class="inlineCode">functi</code> output the same answers. <code class="inlineCode">functh</code> outputs the same answers as <code class="inlineCode">functi</code> because exponents come before multiplication and division. <code class="inlineCode">functg</code> outputs the same answers as <code class="inlineCode">functh</code> because exponents spread into multiplication and division.</p>
+                    </div>
+                    <hr>
+                    <div id="flip13">Example 13</div>
+                    <div id="panel13">
+                        <p>Set</p>
+                        <code>
+                            var functj = (x, y, z) <div class="showIfNarrow"><br></div> => (x * y) ** z; <br><div class="showIfNarrow"><br></div>
+                            var functk = (x, y, z) <div class="showIfNarrow"><br></div> => (x ** z) * (y ** z); <br><div class="showIfNarrow"><br></div>
+                            var functl = (x, y, z) <div class="showIfNarrow"><br></div> => x ** z * y ** z;
+                        </code>
+                        <p>Then <code class="inlineCode">functj</code>, <code class="inlineCode">functk</code>, and <code class="inlineCode">functl</code> output the same answers.</p>
+                    </div>
+                    <br>
+            
+                    <h3> Negative Exponents </h3>
+                    <p>Negative exponents are a combination of exponents and division.</p>
+            
+                    <hr>
+                    <div id="flip14">Example 14</div>
+                    <div id="panel14">
+                        <p>Set</p>
+                        <code>
+                            var functm = (x, y) <div class="showIfNarrow"><br></div> => x ** -y; <br><div class="showIfNarrow"><br></div>
+                            var functn = (x, y) <div class="showIfNarrow"><br></div> => 1 / (x ** y);
+                        </code>
+                        <p>Then <code class="inlineCode">functm</code> and <code class="inlineCode">functn</code> output the same answers.</p>
+                    </div>
+                    <br>
+            
+                    <h3> Square roots </h3>
+                    <p>Square roots are useful for tasks like computing distances. The square root also spreads into multiplication and division.</p>
+                    <hr>
+                    <div id="flip15">Example 15</div>
+                    <div id="panel15">
+                        <p>Set</p>
+                        <code>
+                            var functo = (x, y) <div class="showIfNarrow"><br></div> => Math.sqrt(x * y / z); <br><div class="showIfNarrow"><br></div>
+                            var functp = (x, y) <div class="showIfNarrow"><br></div> => Math.sqrt(x) * Math.sqrt(y) / Math.sqrt(z);
+                        </code>
+                        <p>Then <code class="inlineCode">functo</code> and <code class="inlineCode">functp</code> output the same answers.</p>
+                    </div>
+                    <br><br>
+                    <h2>Sample Problem</h2>
+                    <div class="boxed">
+                    <p>Sally buys a car and a truck. The truck is 1000 USD and the car, normally priced at 500 USD, is at a 30% discount. How much did
+                    Sally pay?</p>
+                    </div>
+                    <br>
+                    <div class="outerflip">
+                    <div id="flip16"> Answer </div>
+                    </div>
+                    <div id="panel16">
+                        <p>We know Sally has to pay 1000 USD for the car, so we can set</p>
+                        <code> var truckPrice = 1000; </code>
+
+                        <p>We need to know how much Sally needs to pay for the car. Since the car is normally priced at 500 USD. So we can set</p>
+                    
+                        <code> var carPrice = 500; </code>
+                    
+                        <p>How much does Sally save due to the above discount? The discount is 30%, so we can set</p>
+                    
+                        <code> var discount = 30; </code>
+                
+                        <p>So Sally saves 150 USD.</p>
+                    
+                        <code> carPrice * discount / 100 === 150 </code>
+                    
+                        <p>Because of that, Sally pays 350 USD</p>
+                    
+                        <code> carPrice - (carPrice * discount / 100) === 350 </code>
+                
+                        <p>By the distributive law</p>
+                    
+                        <code> carPrice - (carPrice * discount / 100) === <div class="showIfNarrow"><br></div> carPrice * (1 - discount / 100) </code>
+
+                        <p>is true. Note that</p> 
+                        
+                        <code> 1 - discount / 100 === <div class="showIfNarrow"><br></div> 1 - (discount / 100) </code>
+                
+                        <p>is true. So Sally pays 1350 USD as</p>
+                
+                        <code> truckPrice + carPrice * (1 - discount / 100) === 1350 </code>
+
+                        <p>is true.</p>
+                    </div>
+                    <br>
+                    <br>
+
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script defer>
+        setTimeout(() => document.getElementById('leave1').click(), 100);
+    </script>
+</body>
+</html>

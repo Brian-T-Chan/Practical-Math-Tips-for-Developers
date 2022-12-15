@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cm.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Feedback</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pages">
+            <div class="page home">
+                <div id="image">
+                    <img src="images/sunrise-gc1ed69cf1_640.jpg" width="100%">
+                    <br>
+                    <div id="imageCredit">
+                        Image by <a href="https://pixabay.com/users/brickbard-1115630/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6474187">Amberrose Nelson</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6474187">Pixabay</a>
+                    </div>
+                </div>
+                <div id="top">
+                    <h1 class="wrap">Practical Math Tips For Developers</h1>
+                    <br class="onlyNarrow"><br class="onlyNarrow">
+                </div>
+                <div id="menubar">
+                    <ul id="menulist">
+                        <li class="menuitem" onclick="javascript:void(0)">Algebra</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Geometry</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Variables</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Matrices</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Binary Numbers</li>
+                        <li class="menuitem" id="leave6" onclick="slide('leave')">Feedback</li>
+                        <li class="menuitem" onclick="location.href='https://sites.google.com/view/btchan';">About Me</li>
+                    </ul>
+                </div>
+                <div class="showIfFourthWidest">
+                    <br><br><br><br><br><br><br><br>
+                    <br><br><br><br>
+                </div>
+                <main loading="lazy">
+                    <p class="intro" loading="lazy">
+
+                        This site is intended to provide practical tips for people who need help with math at various levels (ranging from high school to university level). It is also intended for those who prefer an alternative to reading a textbook or attending a lecture. The content is geared towards developers as concepts and examples are illustrated using JS code snippets. Feedback is welcome (see the feedback page which includes my feedback email).
+
+                    </p>
+
+                    <p class="intro" loading="lazy">
+
+                        <strong>Current Content:</strong> <br> Order of operations and related notions (Algebra). How are vectors different from points (Geometry). Compute distances (Geometry). Variable substitutions for formulas and equations (Variables). How to add and multiply matrices (Matrices). Visual explanation of how binary numbers work (Binary Numbers).  
+    
+                    </p>
+                </main>
+            </div>
+            <div class="page feedback">
+                <div class="buttonlikeContainer">
+                    <div class="buttonlike" onclick="slide('home')">Home</div>
+                    <div class="showIfNarrow"><br></div>
+                </div>
+                <div id="image">
+                    <img src="images/feedback-g152af7d5e_640.png" width="100%">
+                    <br>
+                    <div id="imageCredit">
+                        Image by <a href="https://pixabay.com/users/mohamed_hassan-5229782/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2294109">Mohamed Hassan</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2294109">Pixabay</a>
+                    </div>
+                </div>
+                <div id="heading">
+                    <h1 class="inBetweenWrap"> Feedback </h1>
+                </div>
+               <main>
+                    <p>
+                        As this site is intended to give practical math tips to developers, i'm 
+                        open to questions regarding the content and suggestions on what content to put here. In addition, i'm open to thoughts on the design and construction of this site. Feel free to contact me at this email address.
+                    </p>
+                    <code>webventure777@gmail.com</code>
+                    <p>
+                        Possible ideas for feedback:
+
+                        <ul>
+                            <li class="nonmenuitem"> Any preferences for certain programming languages in the code snippets. </li>
+                            <li class="nonmenuitem"> Any topics you may be interested in. </li>
+                            <li class="nonmenuitem"> Thoughts on the level of detail in the examples. </li>
+                            <li class="nonmenuitem">Thoughts on how well-explained the content is.</li>
+                        </ul>
+                    </p>
+               </main>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script defer>
+        setTimeout(() => document.getElementById('leave6').click(), 100);
+    </script>
+</body>
+</html>

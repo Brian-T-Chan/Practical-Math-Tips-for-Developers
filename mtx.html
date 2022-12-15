@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cm.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Matrices</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pages">
+            <div class="page home">
+                <div id="image">
+                    <img src="images/sunrise-gc1ed69cf1_640.jpg" width="100%">
+                    <br>
+                    <div id="imageCredit">
+                        Image by <a href="https://pixabay.com/users/brickbard-1115630/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6474187">Amberrose Nelson</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6474187">Pixabay</a>
+                    </div>
+                </div>
+                <div id="top">
+                    <h1 class="wrap">Practical Math Tips For Developers</h1>
+                    <br class="onlyNarrow"><br class="onlyNarrow">
+                </div>
+                <div id="menubar">
+                    <ul id="menulist">
+                        <li class="menuitem" onclick="javascript:void(0)">Algebra</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Geometry</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Variables</li>
+                        <li class="menuitem" id="leave4" onclick="slide('leave')">Matrices</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Binary Numbers</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Feedback</li>
+                        <li class="menuitem" onclick="location.href='https://sites.google.com/view/btchan';">About Me</li>
+                    </ul>
+                </div>
+                <div class="showIfFourthWidest">
+                    <br><br><br><br><br><br><br><br>
+                    <br><br><br><br>
+                </div>
+                <main loading="lazy">
+                    <p class="intro" loading="lazy">
+
+                        This site is intended to provide practical tips for people who need help with math at various levels (ranging from high school to university level). It is also intended for those who prefer an alternative to reading a textbook or attending a lecture. The content is geared towards developers as concepts and examples are illustrated using JS code snippets. Feedback is welcome (see the feedback page which includes my feedback email).
+
+                    </p>
+
+                    <p class="intro" loading="lazy">
+
+                        <strong>Current Content:</strong> <br> Order of operations and related notions (Algebra). How are vectors different from points (Geometry). Compute distances (Geometry). Variable substitutions for formulas and equations (Variables). How to add and multiply matrices (Matrices). Visual explanation of how binary numbers work (Binary Numbers).  
+
+                    </p>
+                </main>
+            </div>
+            <div class="page mtx">
+                <div class="buttonlikeContainer">
+                    <div class="buttonlike" onclick="slide('home')">Home</div>
+                </div>
+
+                <div id="heading">
+                    <h1 class="noWrap">Matrices</h1>
+                </div>
+
+                <div id="image">
+                    <img src="images/graphic-ga2d539d7a_640.png" width="90%">
+                    <br>
+                    <div id="imageCredit">
+                        Image by <a href="https://pixabay.com/users/billithecat-7996303/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3976065">Nina Garman</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3976065">Pixabay</a>
+                    </div>
+                </div>
+
+                <main>
+                    <p>
+                        Matrices can be thought of as being two dimensional arrays of numbers, where each inner array has the same number of elements. The number of inner arrays is the number of rows, and the number of numbers in each of the inner arrays is the number of columns. For instance, the matrix <code class="inlineCodeLarge">M</code> below has three rows and 4 columns.
+                    </p>
+                    <code>
+                        var M = [<div class="showIfNarrow"><br></div>[34, 2, 99, 7], <div class="showIfNarrow"><br></div> [2, 4, 3, 3], <div class="showIfNarrow"><br></div><div class="showIfFourthWidest"><br></div> [3, 4, -5, 6]];
+                    </code>
+                    <p>
+                        The matrix <code class="inlineCodeLarge">M</code> is usually written as
+                    </p>
+                    <p>
+                        \begin{pmatrix} 
+                        34 & 2 & 99 & 7\\
+                        2 & 4 & 3 & 3\\
+                        3 & 4 & -5 & 6\\
+                        \end{pmatrix}
+                    </p>
+                    <p>
+                    or as
+                    </p>
+                    <p>
+                        \begin{bmatrix} 
+                        34 & 2 & 99 & 7\\
+                        2 & 4 & 3 & 3\\
+                        3 & 4 & -5 & 6\\
+                        \end{bmatrix}
+                    </p>
+                    <p>
+                        The numbers in a matrix are called the entries. This running example starts with defining some matrices.
+                    </p>
+                    <hr>
+                    <div id="flipL1">start of running example</div>
+                    <div id="panelL1"> 
+                        <p>We will use the following variables in this running example to demonstrate some concepts.</p>
+                        <pre><code class="longerCode">
+var M = [[34, 2, 99, 7],
+        [2, 4, 3, 3],
+        [3, 4, -5, 6]];
+
+var N = [[4, 2, 99, 70],
+        [-2, -4, 3, 3],
+        [13, 14, -5, 6]];
+
+var P = [[444, -2, 990, 444],
+        [2, 4, 6, 8],
+        [1, 2, 3, 4]];
+
+var Q = [[1, 2, 3],
+        [4, 4, 5],
+        [-3, 4, -2],
+        [-10, -10, -10]];
+
+var R = [[1, 2],
+        [3, 4],
+        [5, 6]];
+
+var S = [[1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]];
+
+var T = [[3, 4, 1],
+        [4, 6, 5],
+        [7, 7, 7]];            
+                        </code></pre>
+                    </div>
+
+                    <h2>Matrix Addition</h2>
+                    <p>
+                        Addition of matrices is done entry-wise when the matrices have the same number of rows and columns. The output is another matrix.
+                    </p>
+                    <hr>
+                    <div id="flipL2">this function describes matrix addition </div>
+                    <div id="panelL2">
+                        <pre><code class="longerCode">
+var matrixAdd = function(A, B) {
+  const numRows = A.length;
+  const numColumns = A[0].length;
+  let sum = [];
+  for (let i = 0; i < numRows; i++) {
+    sum[i] = [];
+    for (let j = 0; j < numColumns; j++)
+      sum[i][j] = A[i][j] + B[i][j];
+  }
+  return sum;
+}
+                        </code></pre>
+                        <p>The parameters, <code class="inlineCodeLarge">A</code> and <code class="inlineCodeLarge">B</code>, are matrices that have the same number of rows and the same number of columns.</p>
+                    </div>
+                    <hr>
+                    <div id="flipL3"> running example continued </div>
+                    <div id="panelL3">
+                        <p>
+                            As <code class="inlineCodeLarge">M</code> and <code class="inlineCodeLarge">N</code> have the same number of columns, I will set
+                        </p>
+                        <code class="slightlyLongerCode">
+                            var matrixSum1 = matrixAdd(M, N);
+                        </code>
+                        <p>
+                            Then <code class="inlineCodeLarge">matrixSum1</code> is the following matrix.
+                        </p>
+                        <code>
+                            [[38, 4, 198, 77], <div class="showIfNarrow"><br></div>[0,0,6,6], <div class="showIfNarrow"><br></div><div class="showIfFourthWidest"><br></div>[16,18,-10,12]]
+                        </code>
+                        <p>The sum, <code class="inlineCodeLarge">matrixSum1</code>, is usually written as \[\textbf{M + N}.\] Note that</p>
+                        <code class="slightlyLongerCode">
+                            console.log(matrixAdd(M, N));
+                        </code>
+                        <p>and</p>
+                        <code class="slightlyLongerCode">
+                            console.log(matrixAdd(N, M));
+                        </code>
+                        <p>will both display the following.</p>
+                        <code>
+                            [[38, 4, 198, 77], <div class="showIfNarrow"><br></div>[0,0,6,6], <div class="showIfNarrow"><br></div><div class="showIfFourthWidest"><br></div>[16,18,-10,12]]
+                        </code>
+                        <p>In math symbols, \[\textbf{M + N = N + M}.\]</p>
+                    </div>
+                    <hr>
+                    <div id="flipL4"> running example continued </div>
+                    <div id="panelL4">
+                        <p>
+                            Also, the matrix <code class="inlineCodeLarge">P</code> has three rows and four columns, so \(\textbf{N} + \textbf{P}\) makes sense, \(\textbf{M} + \textbf{P}\) makes sense, and \((\textbf{M} + \textbf{N}) + \textbf{P}\) makes sense. Note that
+                        </p>
+                        <code class="longerCode">
+                            console.log(matrixAdd(M, matrixAdd(N, P)));
+                        </code>
+                        <p>and</p> 
+                        <code class="longerCode">
+                            console.log(matrixAdd(matrixAdd(M, N), P));
+                        </code>
+                        <p>will both display the following</p>
+                        <code class="slightlyLongerCode">
+                            [[482, 2, 1188, 521], <div class="showIfNarrow"><br></div> [2, 4, 12, 14], <div class="showIfNarrow"><br></div> [17, 20, -7, 16]]
+                        </code>
+                        <p>
+                            In math symbols, 
+                            \[\textbf{M + (N+P) = (M+N) + P}.\]
+                            So I can write
+                            \[\textbf{M + N + P}\]
+                            instead of 
+                            \[\textbf{M + (N + P)}\] 
+                            or 
+                            \[\textbf{(M + N) + P}.\]
+                        </p>   
+                    </div>
+
+                    <h2>Matrix Multiplication</h2>
+                    <p>Unlike matrix addition, matrix multiplication is not done entry-wise but done in a different way instead. Multiplication of matrices involves matching the rows of the left matrix with the columns of the right matrix, and the output is another matrix. It is done when the number of columns in the left matrix equals to the number of rows in the right matrix. </p>
+                    <hr>
+                    <div id="flipL5"> this function describes matrix multiplication </div>
+                    <div id="panelL5">
+                        <pre><code class="muchLongerCode">
+var matrixMultiply = function(A, B) {
+  const numRows = A.length;
+  const numColumns = B[0].length;
+  const matchLen = B.length;
+  let product = [];
+  for (let i = 0; i < numRows; i++) {
+    product[i] = [];
+    for (let j = 0; j < numColumns; j++) {
+      product[i][j] = 0;
+      for (let s = 0; s < matchLen; s++)
+        product[i][j] += A[i][s] * B[s][j];
+    }
+  }
+  return product;
+}
+                        </code></pre>
+                        <p>The parameters <code class="inlineCode">A</code> and <code class="inlineCode">B</code> are matrices where the number of columns of <code class="inlineCode">A</code> equals to the number of rows of <code class="inlineCode">B</code>.</p>
+                    </div>
+                    <hr>
+                    <div id="flipL6"> running example continued </div>
+                    <div id="panelL6">
+                        <p>
+                            The number of columns of <code class="inlineCodeLarge">M</code> is 4 and the number of rows of <code class="inlineCodeLarge">Q</code> is 4. So we can set
+                        </p>
+                        <code class="slightlyLongerCode">
+                            var matrixProduct1 = matrixMultiply(M, Q);
+                        </code>
+                        <p>Typing</p>
+                        <code class="slightlyLongerCode">
+                            console.log(matrixProduct1);
+                        </code>
+                        <p>displays the following</p>
+                        <code>
+                            [[-325, 402, -156], <div class="showIfNarrow"><br></div> [-21, 2, -10], <div class="showIfNarrow"><br></div><div class="showIfFourthWidest"><br></div> [-26, -58, -21]]
+                        </code>
+                        <p>The matrix <code class="inlineCode">matrixProduct1</code> is written as \(\textbf{MQ}\).</p>
+                    </div>
+                    <hr>
+                    <div id="flipL7"> running example continued </div>
+                    <div id="panelL7">
+                        <p>The number of columns of <code class="inlineCode">Q</code> is 3 and the number of rows of <code class="inlineCode">R</code> is 3. So we can set</p>
+                        <code class="slightlyLongerCode">
+                            var matrixProduct2 = matrixMultiply(Q, R);
+                        </code>
+                        <p>Typing</p>
+                        <code class="slightlyLongerCode">
+                            console.log(matrixProduct2);
+                        </code>
+                        <p>displays the following</p>
+                        <code>
+                            [[22, 28], <div class="showIfNarrow"><br></div> [41, 54], <div class="showIfNarrow"><br></div><div class="showIfFourthWidest"><br></div> [-1, -2], <div class="showIfNarrow"><br></div> [-90, -120]]
+                        </code>
+                        <p>The matrix <code class="inlineCode"> matrixProduct2 </code> is written as \(\textbf{QR}\).</p>
+                    </div>
+                    <hr>
+                    <div id="flipL8"> running example continued </div>
+                    <div id="panelL8">
+                        <p>
+                            About the matrices <code class="inlineCodeLarge">S</code> and <code class="inlineCodeLarge">T</code>. The number of rows of the matrix <code class="inlineCodeLarge">S</code> is the same as the number of columns of <code class="inlineCodeLarge">S</code>. For this reason, we call <code class="inlineCodeLarge">S</code> a square matrix. Similarly, <code class="inlineCodeLarge">T</code> is a square matrix. In addition, the number of columns of <code class="inlineCodeLarge">S</code> equals to the number of rows of <code class="inlineCodeLarge">T</code>, and the number of columns of <code class="inlineCodeLarge">T</code> equals to the number of rows of <code class="inlineCodeLarge">S</code>. So we can consider the matrix product \(\textbf{ST}\) and the matrix product \(\textbf{TS}\). Typing
+                        </p>
+                        <code class="slightlyLongerCode">
+                            console.log(matrixMultiply(S, T));
+                        </code>
+                        <p>displays</p>
+                        <code>
+                            [[32, 37, 32], <div class="showIfNarrow"><br></div> [74, 88, 71], <div class="showIfNarrow"><br></div><div class="showIfFourthWidest"><br></div> [116, 139, 110]]
+                        </code>
+                        <p>and typing</p>
+                        <code class="slightlyLongerCode">
+                            console.log(matrixMultiply(T, S));
+                        </code>
+                        <p>displays</p>
+                        <code>
+                            [[26, 34, 42], <div class="showIfNarrow"><br></div> [63, 78, 93], <div class="showIfNarrow"><br></div> <div class="showIfFourthWidest"><br></div> [84, 105, 126]]
+                        </code>
+                        <p> 
+                            So \(\textbf{ST} \neq \textbf{TS}\). This example shows that matrix multiplication is different from multiplying numbers.
+                        </p>
+                    </div>
+                    <hr>
+                    <div id="flipL9"> running example continued </div>
+                    <div id="panelL9">
+                        <p> 
+                            The matrix <code class="inlineCodeLarge">R</code> has 3 rows, so as the matrix <code class="inlineCodeLarge">Q</code> has 3 columns, the matrix product \(\textbf{QR}\) makes sense. In fact, as <code class="inlineCodeLarge">Q</code> has 4 rows and as <code class="inlineCodeLarge">R</code> has 2 columns, \(\textbf{QR}\) is a matrix with 4 rows and 2 columns. 
+                        </p>
+                        <p> 
+                            Since <code class="inlineCodeLarge">M</code> has 4 columns and <code class="inlineCodeLarge">Q</code> has 4 rows, \(\textbf{MQ}\) makes sense. In fact, \(\textbf{MQ}\) is a matrix with 3 rows and 3 columns because <code class="inlineCodeLarge">M</code> has 3 rows and <code class="inlineCodeLarge">Q</code> has 3 columns.
+                        </p>
+                        <p>Set</p>
+                        <code class="slightlyLongerCode">
+                            var matrixProduct3 = console.log(matrixMultiply(M, <div class="showIfNarrow"><br></div> matrixMultiply(Q, R)));
+                        </code>
+                        <p>This makes sense as <code class="inlineCodeLarge">M</code> has 4 columns and as \(\textbf{QR}\) has 4 rows. Next, set</p>
+                        <code class="slightlyLongerCode">
+                            var matrixProduct4 = console.log(matrixMultiply( <div class="showIfNarrow"><br></div> matrixMultiply(M, Q), R));
+                        </code>
+                        <p>This makes sense as \(\textbf{MQ}\) has 3 columns and as R has 3 rows. Note that</p>
+                        <code class="slightlyLongerCode">
+                            console.log(matrixProduct3);
+                        </code><p>and</p><code class="slightlyLongerCode">
+                            console.log(matrixProduct4);
+                        </code>
+                        <p>will both display the following</p>
+                        <code>
+                            [[101, 22], <div class="showIfNarrow"><br></div> [-65, -94], <div class="showIfNarrow"><br></div><div class="showIfFourthWidest"><br></div> [-305, -410]]
+                        </code>
+                        <p>In math symbols:
+                        \[\textbf{M(QR) = (MQ)R}\]
+                        </p>
+                        <p>So I can write \(\textbf{MQR}\) instead of \(\textbf{M(QR)}\) or \(\textbf{(MQ)R}\). </p>
+                    </div>
+                    <br><br>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script defer type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script defer>
+        setTimeout(() => document.getElementById('leave4').click(), 100);
+    </script>
+</body>
+</html>

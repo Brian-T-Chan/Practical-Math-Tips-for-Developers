@@ -1,0 +1,22 @@
+CACHE MANIFEST
+
+CACHE:
+index.html
+algebra.html
+geometry.html
+variables.html
+mtx.html
+bnry.html
+binaryframe1.html
+binaryframe2.html
+binaryframe3.html
+bnuml.html
+styles/style.css
+scripts/app.js
+scripts/script.js
+images/sunrise-gc1ed69cf1_640.jpg
+
+NETWORK:
+https://polyfill.io/v3/polyfill.min.js
+https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
