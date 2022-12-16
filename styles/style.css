@@ -631,6 +631,10 @@ a {
     float: right;
     width: 10rem;
   }
+  
+  iframe#verywideframe {
+    width: 16rem;
+  }
 
   div#flip1, div#flip2, div#flip3, div#flip4, div#flip5,
   div#flip6, div#flip7, div#flip8, div#flip9, div#flip10,
