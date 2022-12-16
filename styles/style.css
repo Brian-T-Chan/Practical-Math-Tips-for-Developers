@@ -562,6 +562,8 @@ a {
 
   code {
     font-size: 1.4rem;
+    padding: 0rem;
+    margin: 0rem;
   }
 
   code.inlineCode {
