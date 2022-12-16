@@ -760,7 +760,7 @@ a {
 
 @media (min-width: 431px) and (max-width: 462px){
   div#menubar {
-    left: 4rem;
+    left: 3rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -771,7 +771,7 @@ a {
 
 @media (min-width: 463px) and (max-width: 475px) {
   div#menubar {
-    left: 4.5rem;
+    left: 3.5rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -782,7 +782,7 @@ a {
 
 @media (min-width: 476px) and (max-width: 500px) {
   div#menubar {
-    left: 5rem;
+    left: 4rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -793,7 +793,7 @@ a {
 
 @media (min-width: 501px) and (max-width: 512px) {
   div#menubar {
-    left: 5.6rem;
+    left: 4.6rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -804,7 +804,7 @@ a {
 
 @media (min-width: 513px) and (max-width: 525px) {
   div#menubar {
-    left: 6.1rem;
+    left: 5.1rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -815,7 +815,7 @@ a {
 
 @media (min-width: 526px) and (max-width: 536px) {
   div#menubar {
-    left: 6.6rem;
+    left: 5.6rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -826,7 +826,7 @@ a {
 
 @media (min-width: 537px) and (max-width: 550px) {
   div#menubar {
-    left: 7.1rem;
+    left: 6.1rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -837,7 +837,7 @@ a {
 
 @media (min-width: 551px) and (max-width: 562px) {
   div#menubar {
-    left: 7.93rem;
+    left: 6.93rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -848,7 +848,7 @@ a {
 
 @media (min-width: 563px) and (max-width: 575px) {
   div#menubar {
-    left: 8.36rem;
+    left: 7.36rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -859,7 +859,7 @@ a {
 
 @media (min-width: 576px) and (max-width: 600px) {
   div#menubar {
-    left: 8.52rem;
+    left: 7.52rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -870,7 +870,7 @@ a {
 
 @media (min-width: 601px) and (max-width: 625px) {
   div#menubar {
-    left: 8.78rem;
+    left: 7.78rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -881,7 +881,7 @@ a {
 
 @media (min-width: 625px) and (max-width: 650px) {
   div#menubar {
-    left: 9.44rem;
+    left: 8.44rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -892,7 +892,7 @@ a {
 
 @media (min-width: 651px) and (max-width: 675px) {
   div#menubar {
-    left: 10.5rem;
+    left: 9.5rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -903,7 +903,7 @@ a {
 
 @media (min-width: 676px) and (max-width: 700px) {
   div#menubar {
-    left: 11.5rem;
+    left: 10.5rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
