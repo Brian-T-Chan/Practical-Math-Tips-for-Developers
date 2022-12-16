@@ -746,7 +746,7 @@ a {
 
 @media (max-width: 451px) {
   div#menubar {
-    left: 2rem;
+    left: 1rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -757,7 +757,7 @@ a {
 
 @media (min-width: 451px) and (max-width: 462px){
   div#menubar {
-    left: 2.1rem;
+    left: 1.1rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -768,7 +768,7 @@ a {
 
 @media (min-width: 463px) and (max-width: 475px) {
   div#menubar {
-    left: 2.4rem;
+    left: 1.4rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -779,7 +779,7 @@ a {
 
 @media (min-width: 476px) and (max-width: 500px) {
   div#menubar {
-    left: 3.1rem;
+    left: 2.1rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -790,7 +790,7 @@ a {
 
 @media (min-width: 501px) and (max-width: 512px) {
   div#menubar {
-    left: 3.6rem;
+    left: 4.1rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -801,7 +801,7 @@ a {
 
 @media (min-width: 513px) and (max-width: 525px) {
   div#menubar {
-    left: 4.1rem;
+    left: 4.6rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -812,7 +812,7 @@ a {
 
 @media (min-width: 526px) and (max-width: 536px) {
   div#menubar {
-    left: 4.6rem;
+    left: 5.1rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -823,7 +823,7 @@ a {
 
 @media (min-width: 537px) and (max-width: 550px) {
   div#menubar {
-    left: 5.1rem;
+    left: 5.6rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -834,7 +834,7 @@ a {
 
 @media (min-width: 551px) and (max-width: 562px) {
   div#menubar {
-    left: 5.43rem;
+    left: 5.93rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -845,7 +845,7 @@ a {
 
 @media (min-width: 563px) and (max-width: 575px) {
   div#menubar {
-    left: 5.76rem;
+    left: 6.36rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
@@ -856,7 +856,7 @@ a {
 
 @media (min-width: 576px) and (max-width: 600px) {
   div#menubar {
-    left: 6.42rem;
+    left: 6.92rem;
   }
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
   div#flipL5, div#flipL6, div#flipL7, div#flipL8,
