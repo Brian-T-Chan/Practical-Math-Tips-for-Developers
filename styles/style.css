@@ -747,7 +747,7 @@ a {
 @media (max-width: 451px) {
 
   div#menubar {
-    top: 5rem;
+    top: 10rem;
   }
 
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
