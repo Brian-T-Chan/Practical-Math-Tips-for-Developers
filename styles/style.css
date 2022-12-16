@@ -744,10 +744,11 @@ a {
   }
 }
 
-@media (max-width: 451px) {
+@media (max-width: 430px) {
 
   div#menubar {
-    top: 10rem;
+    top: 15rem;
+    right: 1rem;
   }
 
   div#flipL1, div#flipL2, div#flipL3, div#flipL4,
@@ -757,7 +758,7 @@ a {
   }
 }
 
-@media (min-width: 451px) and (max-width: 462px){
+@media (min-width: 432px) and (max-width: 462px){
   div#menubar {
     left: 4rem;
   }
