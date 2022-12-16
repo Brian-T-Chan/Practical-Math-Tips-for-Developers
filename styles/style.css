@@ -687,8 +687,6 @@ a {
 
   div.boxed {
     width: 90%;
-    padding: 0rem;
-    margin: 0rem;
   }
 
   @media (max-height: 550px) {
