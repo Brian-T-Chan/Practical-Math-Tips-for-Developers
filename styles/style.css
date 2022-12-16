@@ -582,6 +582,18 @@ a {
     font-size: 0.83rem;
   }
 
+  @media (max-width: 600px) {
+
+    code.slightlyLongerCode {
+      font-size: 1rem;
+    }
+
+    code.longerCode {
+      font-size: 0.75rem;
+    }
+
+  }
+
   h2.home {
     text-align: left;
   }
@@ -596,6 +608,12 @@ a {
 
   h1.noWrap {
     font-size: 3.9rem;
+  }
+
+  @media (max-width: 600px) {
+    h1.noWrap {
+      font-size: 3.2rem;
+    }
   }
 
   h2 {
