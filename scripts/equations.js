@@ -50,7 +50,7 @@ let dynamicCode = {
             "mediaQuery" : "screen and (max-width: 1100px)",
             "code" : `
             <div class="boxed">
-            \\[ y \\; = \\; \\bigg{(}\\frac{3}{5u - 4}\\bigg{)}^2 \\;\\; + \\]\\[\\;\\;\\;\\; 4 \\cdot \\bigg{(} \\frac{3}{5u - 4} \\bigg{)} \\,\\, + \\;\\; 7  \\;\\;\\;\\;\\; (3) \\]
+            \\[ y = \\bigg{(}\\frac{3}{5u - 4}\\bigg{)}^2 \\]\\[\\; + \\; 4 \\cdot \\bigg{(} \\frac{3}{5u - 4} \\bigg{)} \\]\\[+ \\; 7 \\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\; (3) \\]
             </div>
             `
         },
@@ -69,7 +69,7 @@ let dynamicCode = {
             "mediaQuery" : "screen and (max-width: 700px)",
             "code" : `
             <div class="boxed">
-            \\[ \\bigg{(}\\frac{3}{5u - 4}\\bigg{)}^2 \\]\\[\\;\\;\\;\\;\\; = \\frac{3^2}{(5u - 4)^2} \\]\\[\\;\\;\\;\\;\\; = \\frac{9}{(5u - 4)^2}   \\]
+            \\[ \\bigg{(}\\frac{3}{5u - 4}\\bigg{)}^2 \\]\\[\\; = \\frac{3^2}{(5u - 4)^2} \\]\\[\\; = \\frac{9}{(5u - 4)^2}   \\]
             </div>
             `
         },
@@ -96,7 +96,7 @@ let dynamicCode = {
             "mediaQuery" : "screen and (max-width: 700px)",
             "code" : `
             <div class="boxed">
-            \\[ 4 \\cdot \\bigg{(} \\frac{3}{5u - 4} \\bigg{)} \\]\\[\\;\\;\\; = \\frac{4 \\cdot 3}{5u - 4} \\]\\[\\;\\;\\;\\; = \\frac{12}{5u - 4} \\]
+            \\[ 4 \\cdot \\bigg{(} \\frac{3}{5u - 4} \\bigg{)} \\]\\[\\; = \\frac{4 \\cdot 3}{5u - 4} \\]\\[\\; = \\frac{12}{5u - 4} \\]
             </div>
             `
         },
@@ -123,7 +123,7 @@ let dynamicCode = {
             "mediaQuery" : "screen and (max-width: 1100px)",
             "code" : `
             <div class="boxed">
-            \\[ y \\; = \\; \\frac{9}{(5u - 4)^2} \\;\\;\\;\\; + \\]\\[\\;\\;\\;\\;\\;\\;\\; \\frac{12}{5u - 4} \\;\\; + \\;\\; 7 \\;\\;\\;\\;\\;\\;\\;\\; (4) \\]
+            \\[ y \\; = \\; \\frac{9}{(5u - 4)^2} \\]\\[\\; + \\; \\frac{12}{5u - 4} \\]\\[ \\;\\;\\; + \\; 7 \\;\\;\\;\\;\\;\\;\\; (4) \\]
             </div>
             `
         },
