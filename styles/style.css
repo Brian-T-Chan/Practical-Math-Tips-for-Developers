@@ -618,6 +618,9 @@ a {
     h1.noWrap {
       font-size: 3.2rem;
     }
+    h1.wrap {
+      font-size: 2.5rem;
+    }
   }
 
   h2 {
