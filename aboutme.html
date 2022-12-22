@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Practical Math Tips For Developers</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="scripts/app.js"></script>
+    <title>About Me</title>
 </head>
+
 <body>
     <div class="container">
         <div class="pages">
@@ -22,21 +21,17 @@
                 </div>
                 <div id="top">
                     <h1 class="wrap">Practical Math Tips For Developers</h1>
-                    <br class="onlyNarrow">
-                    <div class="widebuttonlike" id="menubarButton" onclick="openMenu();">Open Menu</div>
-                    <br class="onlyNarrow">
+                    <br class="onlyNarrow"><br class="onlyNarrow">
                 </div>
-
                 <div id="menubar">
                     <ul id="menulist">
-                        <li class="menuitem" onclick="location.href='algebra.html';">Algebra</li>
-                        <li class="menuitem" onclick="location.href='geometry.html';">Geometry</li>
-                        <li class="menuitem" onclick="location.href='variables.html';">Variables</li>
-                        <li class="menuitem" onclick="location.href='mtx.html';">Matrices</li>
-                        <li class="menuitem" onclick="location.href='bnry.html';">Binary Numbers</li>
-                        <li class="menuitem" onclick="location.href='feedback.html';">Feedback</li>
-                        <li class="menuitem" onclick="location.href='aboutme.html';">About Me</li>
-                        <li class="menuitem" id="closeMenuButton" onclick="closeMenu();">Close Menu</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Algebra</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Geometry</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Variables</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Matrices</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Binary Numbers</li>
+                        <li class="menuitem" onclick="javascript:void(0)">Feedback</li>
+                        <li class="menuitem" id="leave7" onclick="slide('leave')">About Me</li>
                     </ul>
                 </div>
                 <div class="showIfFourthWidest">
@@ -53,14 +48,32 @@
                     <p class="intro" loading="lazy">
 
                         <strong>Current Content:</strong> <br> Order of operations and related notions (Algebra). How are vectors different from points (Geometry). Compute distances (Geometry). Variable substitutions for formulas and equations (Variables). How to add and multiply matrices (Matrices). Visual explanation of how binary numbers work (Binary Numbers).  
-    
+
                     </p>
                 </main>
             </div>
-            <div class="page blank"></div>
+            <div class="page aboutme">
+                <div class="buttonlikeContainer">
+                    <div class="buttonlike" onclick="slide('home')">Home</div>
+                    <div class="showIfNarrow"><br></div>
+                </div>
+                <div id="heading">
+                    <h1 class="inBetweenWrap"> About Me </h1>
+                </div>
+               <main>
+                    <p>
+                        Brian Chan here. I'm a math PhD from Canada with some experience in web development and data science. The content here on this site is from what I have learned over the years. Although my PhD area, finite maths, is not quite this content, I enjoy putting material out that helps me connect with others.
+                    </p>
+               </main>
+
+            </div>
         </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script defer>
+        setTimeout(() => document.getElementById('leave7').click(), 100);
+    </script>
 </body>
 </html>
- 
